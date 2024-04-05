@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(`${API_URL}/${dataType}`);
-      const jsonData = await response.json();
+      const jsonData = await response?.json();
       setData(jsonData);
     };
 

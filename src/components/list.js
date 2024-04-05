@@ -3,7 +3,7 @@ import Item from "./item";
 function List({ data }) {
   return (
     <div>
-      {data.map((province) => (
+      {data?.map((province) => (
         <Item
           key={province.name}
           name={province.name}
